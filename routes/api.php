@@ -7,5 +7,12 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('appointments', 'AppointmentController@index');
-Route::post('appointment', 'AppointmentController@create');
+// Login
+Route::post('login', 'AuthController@login');
+
+
+Route::middleware(['auth:sanctum'])->group(function () {
+    // Appointment
+    Route::get('appointments', 'AppointmentController@index');
+    Route::post('appointment', 'AppointmentController@create');
+});

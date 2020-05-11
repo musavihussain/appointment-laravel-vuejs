@@ -23,7 +23,7 @@ class AppointmentController extends Controller
         ]);
 
         if (!$validator->fails()) {
-        $validated_data=$request->all();
+        $validated_data= $request->all();
         $appointement = new Appointment();
         $appointement->fill($validated_data);
         $appointement->save();
