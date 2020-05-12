@@ -28,3 +28,15 @@ php artisan make:seeder UsersTableSeeder
 php artisan db:seed
 ```
 
+### Vuetify
+```
+npm install vuetify
+npm install sass sass-loader fibers deepmerge -D
+npm i @mdi/font
+php artisan ui vue
+npm install
+```
+
+
+
+

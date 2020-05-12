@@ -32,5 +32,4 @@ class AppointmentController extends Controller
       else
        return $validator->errors();
        }
-
 }
