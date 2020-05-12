@@ -37,6 +37,12 @@ php artisan ui vue
 npm install
 ```
 
+### Vue Router
+```
+npm install vue-router
+```
+
+
 
 
 
