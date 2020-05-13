@@ -35,6 +35,10 @@ Vue.component('AppHome', require('./components/AppHome.vue').default);
 // Adding Router
 import router from './router/router';
 
+// Add User Object
+import User from './Helpers/User';
+window.User = User;
+
 
  const vuetifyOptions={};
 
